@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormCadastro">
+
+    <ImageView
+        android:id="@+id/vulve"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="160dp"
+        android:src="@drawable/vulve"
+        app:layout_constraintEnd_toEndOf="@id/vulve"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+    android:id="@+id/edit_nome"
+    style="@style/Edit_text"
+    android:hint="None"
+    android:inputType="textPersonName"
+    android:drawableRight="@drawable/ic_nome"
+    app:layout_constraintStart_toStartOf="@id/containerComponents"
+    app:layout_constraintEnd_toEndOf="@id/containerComponents"
+    app:layout_constraintTop_toTopOf="@id/containerComponents"
+    />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_text"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_email"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents"
+        />
+
+    <EditText
+        android:id="@+id/edit_password"
+        style="@style/Edit_text"
+        android:hint="Senha"
+        android:inputType="number"
+        android:drawableRight="@drawable/ic_password"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
